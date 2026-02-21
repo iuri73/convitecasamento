@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Convite — Iuri e Larissa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --olive:#6b8a4a;
+      --gold:#c9a44a;
+      --white:#ffffff;
+      --bg:#fbfbf9;
+      --maxw:900px;
+      --card-radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Playfair Display', serif;background:var(--bg);color:#222;margin:0;padding:24px;display:flex;justify-content:center}
+    .wrap{max-width:var(--maxw);width:100%;background:var(--white);border-radius:20px;box-shadow:0 8px 30px rgba(0,0,0,.08);padding:36px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:84px;height:84px;border-radius:999px;background:linear-gradient(135deg,var(--olive),#8aa05a);display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:700}
+    h1{font-family:'Great Vibes', cursive;font-size:60px;margin:0;color:var(--olive);letter-spacing:1px}
+    p.lead{margin:.2rem 0 1.2rem;color:#555}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,1),rgba(250,250,248,1));padding:18px;border-radius:var(--card-radius);border:1px solid rgba(0,0,0,.04)}
+    .card h3{margin:0 0 6px;font-size:18px;color:var(--olive)}
+    .muted{color:#666;font-size:14px}
+    .time{font-weight:700;color:#222}
+    .address{font-size:14px;margin:6px 0}
+    .cta{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:600;text-align:center}
+    .btn-olive{background:var(--olive);color:var(--white)}
+    .btn-gold{background:transparent;color:var(--gold);border:2px solid var(--gold)}
+    .footer{margin-top:18px;text-align:center;color:#666;font-size:13px}
+    .verse{font-style:italic;color:#444;margin-top:8px}
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+    .icons{font-size:20px;color:var(--gold)}
+    form.rsvp{display:flex;flex-direction:column;gap:8px}
+    input,textarea{padding:10px;border-radius:8px;border:1px solid #e6e6e6}
+    .row{display:flex;gap:12px}
+    .qr{width:150px;height:auto;margin-top:10px}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.row{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">I&amp;L</div>
+      <div>
+        <h1>Iuri e Larissa</h1>
+        <p class="lead">Celebramos o nosso amor — 09 de maio de 2026</p>
+        <div class="verse">“O amor jamais acaba.” — 1 Coríntios 13:8</div>
+      </div>
+    </header>
+
+    <section style="margin-top:20px">
+      <div class="grid">
+        <div class="card">
+          <div class="section-title"><div class="icons">✝️</div><h3>Cerimônia</h3></div>
+          <div class="time">18:30 — Cerimônia</div>
+          <div class="address"><strong>Paróquia Nossa Senhora dos Remédios</strong><br>Rua Leovegildo Coêlho, 237 — Centro, Manaus</div>
+          <div style="margin-top:10px"><a class="btn btn-olive" href="https://maps.app.goo.gl/QWQxUwgHJvoWVr5k8" target="_blank">Abrir no Google Maps</a></div>
+        </div>
+
+        <div class="card">
+          <div class="section-title"><div class="icons">🎉</div><h3>Recepção</h3></div>
+          <div class="time">20:30 — Recepção</div>
+          <div class="address"><strong>Felicitá Eventos</strong><br>Av. Barcelos, 648 — Praça 14 de Janeiro, Manaus</div>
+          <div style="margin-top:10px"><a class="btn btn-olive" href="https://maps.app.goo.gl/e8aqCUo18xUhgBbd6" target="_blank">Abrir no Google Maps</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:18px">
+      <div class="card">
+        <h3>Confirmação de presença (RSVP)</h3>
+        <p class="muted">Por favor confirme sua presença até 25/04/2026.</p>
+        <p class="muted">Link/Telefone/QR para confirmação:</p>
+        <img src="8fa95d65-a6d0-4eec-9719-364ba265b886.png" alt="QR Code para confirmação" class="qr">
+        <div class="cta">
+          <a class="btn btn-olive" href="tel:+5592994687330">Ligar</a>
+          <a class="btn btn-gold" href="https://wa.me/5592994687330?text=Ol%C3%A1%2C%20confirmo%20minha%20presen%C3%A7a%20no%20casamento%20de%20Iuri%20e%20Larissa" target="_blank">Confirmar via WhatsApp</a>
+          <a class="btn btn-gold" href="#rsvp-form">Confirmar (formulário)</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Lista de Presentes</h3>
+        <p class="muted">Agradecemos muito! Para facilitar, montamos uma loja com opção de PIX.</p>
+        <p class="muted">Loja/PIX: <strong>COLOQUE_AQUI_LINK_DA_LOJA_OU_CHAVE_PIX</strong></p>
+        <div class="cta"><a class="btn btn-gold" href="COLOQUE_AQUI_LINK_DA_LOJA_OU_CHAVE_PIX">Abrir loja / PIX</a></div>
+      </div>
+    </section>
+
+    <section style="margin-top:20px" id="rsvp-form">
+      <div class="card">
+        <h3>Confirmar presença — formulário</h3>
+        <form class="rsvp" action="mailto:COLOQUE_EMAIL_AQUI?subject=RSVP%20-%20Iuri%20e%20Larissa" method="post" enctype="text/plain">
+          <input type="text" name="nome" placeholder="Seu nome*" required />
+          <div class="row">
+            <input type="tel" name="telefone" placeholder="Telefone / WhatsApp*" required />
+            <input type="number" name="quantidade" placeholder="Número de convidados" min="1" value="1" required />
+          </div>
+          <textarea name="mensagem" rows="3" placeholder="Mensagem (alergias, observações)"></textarea>
+          <div style="display:flex;gap:10px;margin-top:8px">
+            <button class="btn btn-olive" type="submit">Enviar por e-mail</button>
+            <a class="btn btn-gold" href="https://wa.me/5592994687330?text=Ol%C3%A1%2C%20confirmo%20minha%20presen%C3%A7a%20no%20casamento%20de%20Iuri%20e%20Larissa" target="_blank">Confirmar via WhatsApp</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section style="margin-top:20px">
+      <div class="card">
+        <h3>Detalhes & Itens Úteis</h3>
+        <p class="muted">• <strong>Formato do convite:</strong> Digital</p>
+        <p class="muted">• <strong>Traje sugerido:</strong> Esporte fino</p>
+        <p class="muted">• <strong>Playlist:</strong> Nossa playlist especial 🎶</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div style="font-size:13px;color:#555">Tema: Minimalista • Paleta: Verde oliva, branco e dourado • Elementos: flores, folhas e símbolos católicos</div>
+      <div style="margin-top:8px;color:#999;font-size:12px">Convite digital gerado automaticamente. Edite os links e chaves PIX dentro do arquivo HTML.</div>
+    </footer>
+  </div>
+</body>
+</html>
